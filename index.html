@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video</title>
+
+<style>
+body{
+    margin:0;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+video{
+    width:100%;
+    max-width:720px;
+    background:#000;
+}
+</style>
+</head>
+
+<body>
+
+<video id="videoPlayer" controls playsinline
+poster="https://i.imgur.com/abc123.jpg">
+
+    <source src="https://cdn.videy.co/9djoSIlb1.mp4" type="video/mp4">
+</video>
+
+<script>
+const video = document.getElementById("videoPlayer");
+
+video.addEventListener("pointerdown", function(){
+    window.open("https://sauszhi.com/2100064","_blank");
+}, { once:true });
+</script>
+
+</body>
+</html>
